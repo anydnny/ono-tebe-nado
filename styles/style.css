@@ -1,8 +1,8 @@
 /* место для вашего кода */
 
 .header {
-  display: flex;
   position: relative;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 92px 49px 92px 51px;
@@ -22,13 +22,13 @@
 }
 
 .header__link {
+  border-bottom: 1px solid black;
   color: black;
-  font-size: 18px;
   font-family: Raleway;
   font-weight: 400;
+  font-size: 18px;
   line-height: 24.3px;
   text-decoration: none;
-  border-bottom: 1px solid black;
 }
 
 .header__link_active {
@@ -40,57 +40,113 @@
 }
 
 .address-link {
-font-style: normal;
+  font-style: normal;
 }
 
 .header__logo {
+  position: absolute;
+  top: 30.7%;
+  left: 44.7%;
   display: inline-block;
   width: 148px;
   height: 105px;
-  position: absolute;
-  left: 44.7%;
-  top: 30.7%;
 }
 
 .cover {
   position: relative;
-  height: 757px;
-  background-image: url(../images/cover.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
   z-index: 0;
+  display: flex;
+  flex-direction: column;
+  height: 757px;
+  padding: 0 50px 62px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .overlay {
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: black;
   opacity: 0.6;
-  z-index: 1;
+  background-color: black;
 }
-
-/*ТЕСТ ЗАГОЛОВКА*/
-
-h1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+.cover__title {
+  z-index: 2;
+  margin: auto 0;
   color: white;
   font-size: 100px;
-font-family: Raleway;
-font-weight: 700;
-text-transform: uppercase;
-}
-span {
-  z-index: 2;
-  line-height: 115px;
-letter-spacing: 30px;
+  text-transform: uppercase;
 }
 
-.more-space {
+.aligned-text,
+.aligned-text_center,
+.aligned-text_right {
+  display: block;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.aligned-text {
   line-height: 115px;
-letter-spacing: 60px;
+}
+.aligned-text,
+.aligned-text_center {
+  margin-bottom: 20px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: end;
+}
+
+.cover__description {
+  z-index: 2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 78px;
+}
+
+.cover__description-text {
+  color: white;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 15px;
+  word-wrap: break-word;
+}
+
+.bet-button {
+  width: 257px;
+  height: 52px;
+  border: 1px solid white;
+  color: white;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  background-color: transparent;
 }
