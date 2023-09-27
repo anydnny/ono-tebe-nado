@@ -1,4 +1,7 @@
 /* Общие стили */
+html {
+  scroll-behavior: smooth;
+}
 
 .address,
 .page__link {
@@ -211,12 +214,10 @@
 }
 
 .lots__card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  justify-content: space-between;
-  margin-top: 27px;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 27px 0 30px;
 }
 
 .lots__card-list-item {
