@@ -19,8 +19,8 @@ html {
 }
 
 .page__link:hover {
-  color: blue;
   border-bottom: 1px solid blue;
+  color: blue;
 }
 
 .sections-heading,
@@ -138,7 +138,7 @@ html {
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .cover__title {
@@ -180,7 +180,6 @@ html {
   position: relative;
   letter-spacing: 0.3em;
   text-align: center;
-  padding-right: 4.5%;
 }
 
 .aligned-text_right {
@@ -258,8 +257,8 @@ html {
   height: 100%;
   padding: 50px 40px;
   color: white;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .card__title,
